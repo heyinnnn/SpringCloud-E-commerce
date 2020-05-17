@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@RequestMapping("/goods")
+//@RequestMapping("/goods")
+@RequestMapping
 public interface GoodsApi {
 
     /**
@@ -22,26 +23,27 @@ public interface GoodsApi {
      * @param key
      * @return
      */
-    @GetMapping("/spu/page")
-    PageResult<SpuBo> querySpuBoByPage(
+    @GetMapping("spu/page")
+    public PageResult<SpuBo> querySpuBoByPage(
             @RequestParam(value = "key", required = false)String key,
             @RequestParam(value = "saleable", required = false)Boolean saleable,
             @RequestParam(value = "page", defaultValue = "1")Integer page,
-            @RequestParam(value = "rows", defaultValue = "5")Integer rows);
+            @RequestParam(value = "rows", defaultValue = "5")Integer rows
+    );
 
     /**
      * 根据spu商品id查询详情
-     * @param id
+     * @param spuId
      * @return
      */
-    @GetMapping("/spu/detail/{id}")
-    SpuDetail querySpuDetailBySpuId(@PathVariable("id") Long id);
+    @GetMapping("spu/detail/{spuId}")
+    public SpuDetail querySpuDetailBySpuId(@PathVariable("spuId")Long spuId);
 
     /**
      * 根据spu的id查询sku
-     * @param id
+     * @param spuId
      * @return
      */
     @GetMapping("sku/list")
-    List<Sku> querySkusBySpuId(@RequestParam("id") Long id);
+    public List<Sku> querySkusBySpuId(@RequestParam("id")Long spuId);
 }
