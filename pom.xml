@@ -12,6 +12,9 @@
         <module>leyou-registry</module>
         <module>leyou-gateway</module>
         <module>leyou-item</module>
+        <module>leyou-common</module>
+        <module>leyou-upload</module>
+        <module>layou-search</module>
     </modules>
 
     <name>leyou</name>
@@ -29,8 +32,11 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <spring-cloud.version>Finchley.SR2</spring-cloud.version>
-        <mybatis.starter.version>1.3.2</mybatis.starter.version>
-        <mapper.starter.version>2.0.2</mapper.starter.version>
+<!--        <spring-cloud.version>Hoxton.SR3</spring-cloud.version>-->
+<!--        <mybatis.starter.version>1.3.2</mybatis.starter.version>-->
+<!--        <mapper.starter.version>2.0.2</mapper.starter.version>-->
+        <mybatis.starter.version>2.1.0</mybatis.starter.version>
+        <mapper.starter.version>2.1.5</mapper.starter.version>
         <druid.starter.version>1.1.9</druid.starter.version>
 <!--        <mysql.version>5.1.32</mysql.version>-->
         <mysql.version>8.0.19</mysql.version>

@@ -12,3 +12,5 @@ zuul:
   prefix: /api # 路由路径前缀
   routes:
     item-service: /item/**
+    upload-service: /upload/**
+    search-service: /search/**
