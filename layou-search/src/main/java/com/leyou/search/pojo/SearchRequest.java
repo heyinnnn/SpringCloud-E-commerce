@@ -7,13 +7,13 @@ public class SearchRequest {
 
     private Integer page;// 当前页
 
-    private Map<String,String> filter;
+    private Map<String,Object> filter;
 
-    public Map<String, String> getFilter() {
+    public Map<String, Object> getFilter() {
         return filter;
     }
 
-    public void setFilter(Map<String, String> filter) {
+    public void setFilter(Map<String, Object> filter) {
         this.filter = filter;
     }
 

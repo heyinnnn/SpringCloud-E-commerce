@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+
 @RestController
 @RequestMapping
 public class SearchController {
@@ -25,7 +27,7 @@ public class SearchController {
      * @return
      */
     @PostMapping("page")
-    public ResponseEntity<SearchResult> search(@RequestBody SearchRequest request) {
+    public ResponseEntity<SearchResult> search(@RequestBody SearchRequest request, HttpServletRequest httpreq) {
         SearchResult result = this.searchService.search(request);
         if (result == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);

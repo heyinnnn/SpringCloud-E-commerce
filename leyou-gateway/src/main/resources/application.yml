@@ -14,3 +14,4 @@ zuul:
     item-service: /item/**
     upload-service: /upload/**
     search-service: /search/**
+    user-service: /user/**

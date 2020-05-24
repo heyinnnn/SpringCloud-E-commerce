@@ -15,6 +15,9 @@
         <module>leyou-common</module>
         <module>leyou-upload</module>
         <module>layou-search</module>
+        <module>leyou-goods-web</module>
+        <module>leyou-user</module>
+        <module>leyou-sms-service</module>
     </modules>
 
     <name>leyou</name>

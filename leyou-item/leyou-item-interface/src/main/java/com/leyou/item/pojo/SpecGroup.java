@@ -15,7 +15,7 @@ public class SpecGroup {
     private String name;
 
     @Transient
-    private List<SpecParam> params;
+    private List<SpecParam> params;  // 该组下的所有规格参数集合
 
    // getter和setter
 
