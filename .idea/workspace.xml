@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d09ce8b8-8542-432d-a11f-5323de72a495" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-order/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -291,7 +288,7 @@
       <workItem from="1588865785851" duration="106000" />
       <workItem from="1588865919890" duration="24298000" />
       <workItem from="1589700990716" duration="23721000" />
-      <workItem from="1590225059938" duration="52062000" />
+      <workItem from="1590225059938" duration="52805000" />
     </task>
     <servers />
   </component>
