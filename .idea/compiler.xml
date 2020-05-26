@@ -21,6 +21,7 @@
         <module name="layou-search" />
         <module name="leyou-item-interface" />
         <module name="leyou-user-interface" />
+        <module name="leyou-order" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -36,6 +37,7 @@
       <module name="leyou-item" target="1.8" />
       <module name="leyou-item-interface" target="1.8" />
       <module name="leyou-item-service" target="1.8" />
+      <module name="leyou-order" target="1.8" />
       <module name="leyou-registry" target="1.8" />
       <module name="leyou-search" target="1.8" />
       <module name="leyou-sms-service" target="1.8" />
@@ -57,6 +59,7 @@
       <module name="leyou-goods-web" options="-parameters" />
       <module name="leyou-item-interface" options="-parameters" />
       <module name="leyou-item-service" options="-parameters" />
+      <module name="leyou-order" options="-parameters" />
       <module name="leyou-registry" options="-parameters" />
       <module name="leyou-search" options="-parameters" />
       <module name="leyou-sms-service" options="-parameters" />
