@@ -22,6 +22,9 @@ public class User {
     @JsonIgnore
     private String password;// 密码
 
+    @Pattern(regexp = "/^[_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,})$/", message = "邮箱格式不正确")
+    private String email;
+
     @Pattern(regexp = "^1[35678]\\d{9}$", message = "手机号格式不正确")
     private String phone;// 电话
 
@@ -30,12 +33,31 @@ public class User {
     @JsonIgnore
     private String salt;// 密码的盐值
 
+    @JsonIgnore
+    private Boolean isactivate;
+
     public Long getId() {
         return id;
     }
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Boolean getIsactivate() {
+        return isactivate;
+    }
+
+    public void setIsactivate(Boolean isactivate) {
+        this.isactivate = isactivate;
     }
 
     public String getUsername() {

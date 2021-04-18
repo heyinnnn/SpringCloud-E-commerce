@@ -27,7 +27,7 @@ public class CartService {
     @Autowired
     private GoodsClient goodsClient;
 
-    static final String KEY_PREFIX = "leyou:cart:uid:";
+    static final String KEY_PREFIX = "cart:uid:";
 
     static final Logger logger = LoggerFactory.getLogger(CartService.class);
 

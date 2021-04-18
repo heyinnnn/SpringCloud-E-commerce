@@ -1,5 +1,5 @@
 server:
-  port: 10010
+  port: 7070
 spring:
   application:
     name: leyou-gateway
@@ -7,7 +7,7 @@ eureka:
   client:
     registry-fetch-interval-seconds: 5
     service-url:
-      defaultZone: http://127.0.0.1:10086/eureka
+      defaultZone: http://127.0.0.1:7001/eureka
 zuul:
   prefix: /api # 路由路径前缀
   routes:
@@ -21,8 +21,8 @@ zuul:
   sensitive-headers:
 leyou:
   jwt:
-    pubKeyPath:  /Users/jinze/IdeaProjects/leyou/rsakey/rsa.pub # 公钥地址
-    cookieName: LY_TOKEN # cookie的名称
+    pubKeyPath: C:/Users/heyin/IdeaProjects/Leyou-E-commerce/leyou/rsakey/rsa.pub # 公钥地址
+    cookieName: USER_TOKEN # cookie的名称
   filter:
     allowPaths:
       - /api/auth

@@ -6,7 +6,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:10086/eureka
+      defaultZone: http://127.0.0.1:7001/eureka
     registry-fetch-interval-seconds: 10
   instance:
     lease-renewal-interval-in-seconds: 5 # 每隔5秒发送一次心跳
@@ -14,8 +14,8 @@ eureka:
 leyou:
   jwt:
     secret: leyou@Login(Auth}*^31)&heiMa% # 登录校验的密钥
-    pubKeyPath: /Users/jinze/IdeaProjects/leyou/rsakey/rsa.pub # 公钥地址
-    priKeyPath: /Users/jinze/IdeaProjects/leyou/rsakey/rsa.pri # 私钥地址
+    pubKeyPath: C:/Users/heyin/IdeaProjects/Leyou-E-commerce/leyou/rsakey/rsa.pub # 公钥地址
+    priKeyPath: C:/Users/heyin/IdeaProjects/Leyou-E-commerce/leyou/rsakey/rsa.pri # 私钥地址
     expire: 30 # 过期时间,单位分钟
-    cookieName: LY_TOKEN
+    cookieName: USER_TOKEN
     cookieMaxAge: 30

@@ -25,7 +25,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         // 查询token
-        String token = CookieUtils.getCookieValue(request, "LY_TOKEN");
+        String token = CookieUtils.getCookieValue(request, "USER_TOKEN");
         if (StringUtils.isBlank(token)) {
             // 未登录,返回401
             response.setStatus(HttpStatus.UNAUTHORIZED.value());

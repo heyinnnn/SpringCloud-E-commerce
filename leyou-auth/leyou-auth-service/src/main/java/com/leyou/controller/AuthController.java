@@ -55,7 +55,7 @@ public class AuthController {
      * @return
      */
     @GetMapping("verify")
-    public ResponseEntity<UserInfo> verifyUser(@CookieValue("LY_TOKEN")String token, HttpServletRequest request, HttpServletResponse response){
+    public ResponseEntity<UserInfo> verifyUser(@CookieValue("USER_TOKEN")String token, HttpServletRequest request, HttpServletResponse response){
         try {
             // 从token中解析token信息
             UserInfo userInfo = JwtUtils.getInfoFromToken(token, this.prop.getPublicKey());
