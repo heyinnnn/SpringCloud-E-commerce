@@ -1,0 +1,7 @@
+/target
+/catalina.base_IS_UNDEFINED
+/.settings
+*.iml
+/.project
+/.classpath
+/.idea
